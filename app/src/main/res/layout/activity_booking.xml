@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/softWhite"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Booking Details"
+            android:textColor="@color/darkGray"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Package Name"
+            android:textColor="@color/navyBlue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBookingPackageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Package Title"
+            android:textColor="@color/darkGray"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textColor="@color/navyBlue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBookingPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="LKR 5000"
+            android:textColor="@color/orange"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textColor="@color/navyBlue"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etBookingDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_rounded"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Select date"
+            android:textColor="@color/darkGray"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textColor="@color/navyBlue"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etBookingTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_rounded"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Select time"
+            android:textColor="@color/darkGray"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address / Note"
+            android:textColor="@color/navyBlue"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etBookingNote"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_rounded"
+            android:gravity="top"
+            android:hint="Enter address or notes"
+            android:textColor="@color/darkGray"
+            android:padding="12dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutLocationSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_rounded"
+            android:orientation="vertical"
+            android:padding="14dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home Session Location"
+                android:textColor="@color/navyBlue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Share your current location for home training sessions."
+                android:textColor="@color/darkGray"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnShareLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/navyBlue"
+                android:text="Share My Location"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tvLocationStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Location not shared yet"
+                android:textColor="@color/orange"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnConfirmBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange"
+            android:text="Pay with PayHere"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

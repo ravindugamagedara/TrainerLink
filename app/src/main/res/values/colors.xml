@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default colors-->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- FitTrainer Theme 2 Colors -->
+    <color name="orange">#FB8C00</color>
+    <color name="navyBlue">#0D47A1</color>
+    <color name="softWhite">#FAFAFA</color>
+    <color name="darkGray">#212121</color>
+
+</resources>
+
